@@ -3,6 +3,7 @@
 #### 项目介绍
 本项目为一个音乐播放器，界面部分参考网易云音乐，项目中API主要来源为<a href="https://binaryify.github.io/NeteaseCloudMusicApi/#/">GitHub</a>上提供和
 本人抓包获得，包含了网易云音乐的绝大部分API。
+如有侵权请告知，我将删除GitHub上与之相关的一切代码。
 
 #### 界面截图
 ![](images/主页1.jpg) ![](images/主页2.jpg) ![](images/主页4.jpg)
