@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:orientation="horizontal"
+    android:id="@+id/item_item">
+
+    <FrameLayout
+        android:layout_width="138dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp">
+
+        <ImageView
+            android:id="@+id/mv_cover_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/mv_playcount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:drawableStart="@drawable/ic_textdrawable_camera"
+            android:textColor="?attr/item_drawable_tint_color"
+            android:textSize="11sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mv_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="?attr/item_text_main_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/mv_info_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginTop="2dp"
+            android:textColor="?attr/item_text_sub_color"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

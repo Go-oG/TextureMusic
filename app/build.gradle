@@ -1,0 +1,175 @@
+apply from: 'customConfig.gradle'
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "wzp.com.texturemusic"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        resConfigs "zh"
+//        ndk {
+//            //设置支持的SO库架构
+//            abiFilters 'arm64-v8a', 'armeabi'
+//        }
+    }
+
+    /**
+     * 为了能够正常运行请将下面部分文字替换为你自己的
+     * 签名文件与配置
+     */
+    signingConfigs {
+        release {
+            storeFile file('release_key.jks')
+            storePassword customConfig.storePassword
+            keyAlias customConfig.keyAlias
+            keyPassword customConfig.keyPassword
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField("String", "shareSdks1", "\""+customConfig.shareSdkS+"\"")
+            buildConfigField("String", "shareSdkS2", "\""+customConfig.shareSdkS1+"\"")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            buildConfigField("String", "shareSdks1", "\""+customConfig.shareSdkS+"\"")
+            buildConfigField("String", "shareSdkS2", "\""+customConfig.shareSdkS1+"\"")
+            //代码混淆
+            minifyEnabled true
+            //去除无用资源
+            shrinkResources true
+            //ZIP 压缩
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(name: 'extension-flac', ext: 'aar')
+    implementation 'androidx.appcompat:appcompat:1.1.0-beta01'
+    implementation 'com.google.android.material:material:1.1.0-alpha07'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
+    implementation 'androidx.dynamicanimation:dynamicanimation:1.1.0-alpha01'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.alibaba:fastjson:1.1.71.android'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+
+    //Glide V4
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.9.0'
+    implementation 'com.github.bumptech.glide:annotations:4.9.0'
+
+    //弹出Diaolog
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+
+    //日历时间选择器
+    implementation 'com.code-troopers.betterpickers:library:3.1.0'
+
+    //Glide图形转换库
+    implementation 'jp.wasabeef:glide-transformations:3.0.1'
+
+    //Glide图片加载
+    implementation 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.9.0"
+    annotationProcessor 'androidx.annotation:annotation:1.1.0'
+
+    //高斯模糊
+    implementation 'com.github.Commit451:NativeStackBlur:1.0.5'
+
+    //阿里巴巴 Vlayout
+    implementation('com.alibaba.android:vlayout:1.0.5@aar') {
+        transitive = true
+    }
+
+    //GreenDao
+    implementation 'org.greenrobot:greendao:3.2.2'
+
+    //圆形图
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //水平进度条
+    implementation 'me.zhouzhuo.zzhorizontalprogressbar:zz-horizontal-progressbar:1.0.0'
+
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    //异步权限请求
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+
+    //google Exoplyer
+    implementation 'com.google.android.exoplayer:exoplayer:2.10.0'
+
+    //rxlifecycle
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2'
+
+    //文件下载
+    implementation 'com.liulishuo.filedownloader:library:1.7.5'
+
+    //提取图片主色彩
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'com.github.Lauzy:PlayPauseView:1.0.4'
+
+    //lottie
+    implementation 'com.airbnb.android:lottie:2.2.5'
+
+    //seekbar
+    implementation 'com.minimize.library:seekbar-compat:0.2.5'
+
+    //滑动解锁
+    implementation 'com.ncorti:slidetoact:0.1.0'
+
+    //画廊形式的recycleview 布局管理器
+    implementation 'com.azoft.carousellayoutmanager:carousel:1.2.1'
+
+    //圆弧形状的seekbar
+    implementation 'me.tankery.lib:circularSeekBar:1.1.4'
+
+    //recyclerview item动画
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.7'
+
+    //exoplyer 拓展
+    implementation 'com.google.android.exoplayer:extension-okhttp:2.10.0'
+
+    //Rxbind
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
+
+    //流式布局
+    implementation 'com.google.android:flexbox:0.3.2'
+}

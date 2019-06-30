@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/local_artist_item"
+    android:layout_width="match_parent"
+    android:layout_height="146dp">
+
+    <ImageView
+        android:id="@+id/local_artist_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/logo" />
+
+
+    <TextView
+        android:id="@+id/local_artist_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:maxLines="1"
+        android:text="何山"
+        android:textColor="?attr/text_three_color"
+        android:textSize="15sp" />
+
+</androidx.cardview.widget.CardView>

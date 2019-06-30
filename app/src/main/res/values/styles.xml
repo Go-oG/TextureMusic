@@ -1,0 +1,353 @@
+<resources>
+    <!--心形选择样式-->
+    <style name="HertCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/sl_ac_main_play_mark</item>
+    </style>
+    <!--popwindow动画-->
+    <style name="MyPopAnnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popwindow_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_exit_anim</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">17sp</item>
+
+    </style>
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="pop_playlist_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_playlist_enter</item>
+        <item name="android:windowExitAnimation">@anim/pop_playlist_exit</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--桌面小部件的样式-->
+    <style name="widget_progress">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/widget_style_drawable</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:maxHeight">6dp</item>
+    </style>
+
+    <!--zhiyu色主题-->
+    <style name="theme_1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color1</item>
+        <item name="colorPrimaryDark">@color/color1</item>
+        <item name="colorAccent">@color/color1</item>
+        <!--主色调-->
+        <item name="main_color">@color/color1</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/color1</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/color1</item>
+        <item name="nav_text_color">@color/color_black</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+    </style>
+    <!--浅紫色主题-->
+    <style name="theme_2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colo2</item>
+        <item name="colorPrimaryDark">@color/colo2</item>
+        <item name="colorAccent">@color/colo2</item>
+
+        <item name="main_color">@color/colo2</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/colo2</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/colo2</item>
+        <item name="nav_text_color">@color/color_black</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+    </style>
+    <!--蓝色主题-->
+    <style name="theme_3" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colo6</item>
+        <item name="colorPrimaryDark">@color/colo6</item>
+        <item name="colorAccent">@color/colo6</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="main_color">@color/colo6</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/colo6</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/colo6</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+    <!--深紫色主题-->
+    <style name="theme_4" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colo4</item>
+        <item name="colorPrimaryDark">@color/colo4</item>
+        <item name="colorAccent">@color/colo4</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="main_color">@color/colo4</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/colo4</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/colo4</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+    <!--浅黑主题-->
+    <style name="theme_5" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color20</item>
+        <item name="colorPrimaryDark">@color/color20</item>
+        <item name="colorAccent">@color/color20</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="main_color">@color/color20</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/color20</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/color20</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+    <!--经典蓝主题-->
+    <style name="theme_6" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color21</item>
+        <item name="colorPrimaryDark">@color/color21</item>
+        <item name="colorAccent">@color/color21</item>
+        <!--主色调-->
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="main_color">@color/color21</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/color21</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/color21</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+    <!--紫红色主题-->
+    <style name="theme_7" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color7</item>
+        <item name="colorPrimaryDark">@color/color7</item>
+        <item name="colorAccent">@color/color7</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="main_color">@color/color7</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/color7</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/color7</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+    <!--浅黄色主题-->
+    <style name="theme_8" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colo12</item>
+        <item name="colorPrimaryDark">@color/colo12</item>
+        <item name="colorAccent">@color/colo12</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="main_color">@color/colo12</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/colo12</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/colo12</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+    <!--青绿主题-->
+    <style name="theme_9" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color9</item>
+        <item name="colorPrimaryDark">@color/color9</item>
+        <item name="colorAccent">@color/color9</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="main_color">@color/color9</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/color9</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/color9</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+    <!--浅绿色主题-->
+    <style name="theme_10" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color10</item>
+        <item name="colorPrimaryDark">@color/color10</item>
+        <item name="colorAccent">@color/color10</item>
+
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="main_color">@color/color10</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/color10</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/color10</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+    <!--柠檬色主题-->
+    <style name="theme_11" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color11</item>
+        <item name="colorPrimaryDark">@color/color11</item>
+        <item name="colorAccent">@color/color11</item>
+        <item name="main_color">@color/color11</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/color11</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/color11</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+    <!--土褐色主题-->
+    <style name="theme_12" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color13</item>
+        <item name="colorPrimaryDark">@color/color13</item>
+        <item name="colorAccent">@color/color13</item>
+
+        <item name="main_color">@color/color13</item>
+        <item name="item_driver_color">@color/black_12</item>
+        <item name="main_bk_color">@color/back_color_w</item>
+        <item name="item_text_main_color">@color/black_87</item>
+        <item name="item_text_sub_color">@color/black_54</item>
+        <item name="img_tint_color">@color/color_white</item>
+        <item name="text_main_color">@color/color_black</item>
+        <item name="text_other_color">@color/color18</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="recycleview_bk_color">@color/color_white</item>
+        <item name="item_text_color">@color/color16</item>
+        <item name="item_drawable_tint_color">@color/color_white</item>
+        <item name="tablayout_text_select_color">@color/color13</item>
+        <item name="tablayout_text_unselect_color">@color/black_54</item>
+        <item name="tablayout_bk_color">@color/back_color_w</item>
+        <item name="tablayout_indicator_color">@color/color13</item>
+        <item name="nav_text_color">@color/color_black</item>
+    </style>
+
+    <!--夜间模式-->
+    <style name="theme_night" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black_87</item>
+        <item name="colorPrimaryDark">@color/black_87</item>
+        <item name="colorAccent">@color/black_87</item>
+        <!--主色调-->
+        <item name="main_color">@color/black_87</item>
+        <item name="main_bk_color">@color/black_87</item>
+        <item name="img_tint_color">@color/white_12</item>
+        <item name="text_main_color">@color/white_70</item>
+        <item name="text_other_color">@color/white_12</item>
+        <item name="text_three_color">@color/color_white</item>
+        <item name="item_text_main_color">@color/white_70</item>
+        <item name="item_text_sub_color">@color/white_12</item>
+        <item name="recycleview_bk_color">@color/black_87</item>
+        <item name="item_text_color">@color/white_70</item>
+        <item name="item_drawable_tint_color">@color/white_70</item>
+        <item name="tablayout_text_select_color">@color/important_red_night</item>
+        <item name="tablayout_text_unselect_color">@color/white_12</item>
+        <item name="tablayout_bk_color">@color/black_87</item>
+        <item name="tablayout_indicator_color">@color/black_87</item>
+        <item name="nav_text_color">@color/white_70</item>
+        <item name="item_driver_color">@color/color_driver</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/window_bk</item>
+    </style>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!--搜索界面专辑的布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_album_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_album_img"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_album_artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="8dp"
+            android:textColor="?attr/item_drawable_tint_color"
+            android:textSize="11sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_album_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:maxLines="2"
+        android:textColor="?attr/item_text_main_color"
+        android:textSize="15sp" />
+
+</LinearLayout>

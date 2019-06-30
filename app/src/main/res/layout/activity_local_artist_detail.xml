@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!--本地歌手的界面-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/m_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:background="@null">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/m_collapsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="#80000000"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/app_bar_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:transitionName="@string/shareartistdetail"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/m_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                style="@style/ClubToolbar"
+                app:layout_collapseMode="pin">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/toolbar_return_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_nav_break"
+                        android:tint="#ffffffff" />
+
+                    <TextView
+                        android:id="@+id/artist_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/toolbar_return_img"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/m_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:elevation="8dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_fab_btn_src"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/m_recyclerview"
+        app:layout_anchorGravity="end|top" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

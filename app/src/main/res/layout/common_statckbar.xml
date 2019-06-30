@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><!--沉浸式状态栏所必须的-->
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_view_statckbar"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp" />

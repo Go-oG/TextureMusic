@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!--艺术家界面-->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<!--顶部toolbar-->
+<include layout="@layout/common_title_toolbar" />
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/m_swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ac_artist_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</merge>

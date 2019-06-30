@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/m_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="?attr/main_color"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <FrameLayout
+        android:id="@+id/m_bottom_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ViewStub
+            android:id="@+id/m_bottom_viewStub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/common_bottom_control" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/m_content_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/m_bottom_frame"
+        android:layout_below="@id/m_stack_view"
+        android:orientation="vertical" />
+
+</RelativeLayout>
+
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!--通用底部控制栏-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/common_bottom_view"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#2e373c">
+
+    <ImageView
+        android:id="@+id/comment_bottom_music_img"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:src="@mipmap/logo"
+        android:transitionName="@string/sharemusicimg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/comment_bottom_next_img"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_ac_main_play_next"
+        android:transitionName="@string/sharenextbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.freedom.lauzy.playpauseviewlib.PlayPauseView
+        android:id="@+id/comment_bottom_play_img"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:transitionName="@string/shareplaybtn"
+        app:anim_direction="positive"
+        app:anim_duration="200"
+        app:bg_color="#00ffffff"
+        app:btn_color="?attr/main_color"
+        app:gap_width="24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/comment_bottom_next_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:space_padding="4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/comment_bottom_music_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:transitionName="@string/sharemusicnametv"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toStartOf="@id/comment_bottom_play_img"
+        app:layout_constraintStart_toEndOf="@id/comment_bottom_music_img" />
+
+    <wzp.com.texturemusic.customview.CarouselTextView
+        android:id="@+id/comment_bottom_album_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textColor="?attr/main_color"
+        android:textSize="11sp"
+        android:transitionName="@string/sharealbumnametv"
+        app:layout_constraintEnd_toStartOf="@id/comment_bottom_play_img"
+        app:layout_constraintStart_toEndOf="@id/comment_bottom_music_img"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_bk_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/main_color">
+
+        <ImageView
+            android:id="@+id/return_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:tint="?attr/img_tint_color"
+            android:src="@drawable/ic_nav_break" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/return_img"
+            android:text="筛选"
+            android:textColor="?attr/img_tint_color" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/all_btn"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_text_bk"
+        android:gravity="center"
+        android:textColor="?attr/item_text_sub_color"
+        android:text="全部歌单" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/m_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp" />
+
+</merge>

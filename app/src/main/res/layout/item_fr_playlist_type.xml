@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--歌单Fragment 顶部歌单类别的布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <Button
+        android:id="@+id/fr_playlist_type_btn"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/shape_fr_playlist_type"
+        android:text="全部"
+        android:gravity="center"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/fr_playlist_type_light_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:text="轻音乐"
+        android:textColor="#666666"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/fr_playlist_type_antiquity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@id/fr_playlist_type_light_music"
+        android:clickable="true"
+        android:text="古风"
+        android:textColor="#666666"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/fr_playlist_type_chinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@id/fr_playlist_type_antiquity"
+        android:clickable="true"
+        android:text="华语"
+        android:textColor="#666666"
+        android:textSize="17sp" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fr_ranking_gf_rec_item"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <FrameLayout
+        android:id="@+id/fr_raking_frame"
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/fr_ranking_gf_rec_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/fr_ranking_update_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/bpWhite"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/fr_raking_frame"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fr_ranking_gf_rec_textview_one"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/general_hightgray" />
+
+        <TextView
+            android:id="@+id/fr_ranking_gf_rec_textview_two"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/general_hightgray" />
+
+        <TextView
+            android:id="@+id/fr_ranking_gf_rec_textview_three"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/general_hightgray" />
+
+    </LinearLayout>
+
+</RelativeLayout>

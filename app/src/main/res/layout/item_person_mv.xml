@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/person_mv_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/person_mv_img"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/person_mv_playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_search_mv_item_camera"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/person_mv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:maxEms="18"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/person_mv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxEms="12"
+        android:maxLines="1"
+        android:textColor="@color/important_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/person_mv_artistname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxEms="12"
+        android:maxLines="1"
+        android:textColor="@color/general_lowgray"
+        android:textSize="14sp" />
+
+</LinearLayout>

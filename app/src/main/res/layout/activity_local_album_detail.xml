@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_bk_color">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/m_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:background="@null">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/m_collapsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            app:contentScrim="#80000000"
+            app:expandedTitleMarginStart="16dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/album_detail_bk_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:transitionName="@string/sharealbumdetail"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/m_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                style="@style/ClubToolbar"
+                app:layout_collapseMode="pin">
+
+                <RelativeLayout
+                    android:id="@+id/ac_album_detail_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/album_detail_break"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_nav_break"
+                        android:tint="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/toolbar_album_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/album_detail_break"
+                        android:maxLines="2"
+                        android:text="专辑"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/album_detail_operation"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp" />
+
+                    <ImageView
+                        android:id="@+id/album_detail_sort"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toStartOf="@id/album_detail_operation" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/album_detail_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:elevation="8dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_fab_btn_src"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/album_detail_recycle"
+        app:layout_anchorGravity="end|top" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

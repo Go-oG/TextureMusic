@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/main_color">
+
+        <ImageView
+            android:id="@+id/dj_rank_break"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_nav_break"
+            android:tint="?attr/img_tint_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/dj_rank_break"
+            android:text="电台排行榜"
+            android:textColor="?attr/img_tint_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/dj_rank_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/tablayout_bk_color"
+        app:tabIndicatorColor="?attr/tablayout_indicator_color"
+        app:tabSelectedTextColor="?attr/tablayout_text_select_color"
+        app:tabTextColor="?attr/tablayout_text_unselect_color" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/dj_rank_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</merge>

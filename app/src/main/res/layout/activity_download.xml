@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/main_bk_color">
+
+    <include layout="@layout/common_title_toolbar" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/downlaod_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/tablayout_bk_color"
+        app:tabIndicatorColor="?attr/tablayout_indicator_color"
+        app:tabSelectedTextColor="?attr/tablayout_text_select_color"
+        app:tabTextColor="?attr/tablayout_text_unselect_color" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/download_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</merge>

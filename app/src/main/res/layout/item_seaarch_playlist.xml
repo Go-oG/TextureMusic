@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--搜索search  歌单布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_playlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_playlist_img"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_playlist_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:textColor="?attr/item_drawable_tint_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/item_playlist_artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="?attr/item_drawable_tint_color"
+            android:textSize="11sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_playlist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:textColor="?attr/item_text_main_color"
+        android:maxLines="2" />
+</LinearLayout>

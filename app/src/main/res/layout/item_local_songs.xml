@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于展示本地单条数据 可以用于展示网络数据待定-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/local_songs_item"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <ImageView
+        android:id="@+id/item_cover_img"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/logo" />
+
+
+    <ImageView
+        android:id="@+id/item_operation_img"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_nav_operation"
+        android:tint="?attr/main_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/item_cover_img"
+        android:layout_toStartOf="@id/item_operation_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_musicname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="25"
+            android:maxLines="1"
+            android:text="Dream It Possible"
+            android:textColor="?attr/item_text_main_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_musicdesc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxEms="25"
+            android:maxLines="1"
+            android:text="Delacey"
+            android:textColor="?attr/item_text_sub_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/item_cover_img"
+        android:background="?attr/item_driver_color" />
+
+</RelativeLayout>

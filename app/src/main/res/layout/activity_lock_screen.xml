@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageSwitcher
+        android:id="@+id/img_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/main_play_bk"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/m_status_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <app.minimize.com.seek_bar_compat.SeekBarCompat
+                android:id="@+id/lock_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:progressBackgroundColor="@color/general_lowgray"
+                app:progressColor="?attr/main_color"
+                app:thumbColor="?attr/main_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/start_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="12dp"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/end_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:textColor="#ffffff"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/music_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffffff"
+                android:maxLines="1"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+                <!--中间控制播放、暂停的按钮-->
+                <com.freedom.lauzy.playpauseviewlib.PlayPauseView
+                    android:id="@+id/play_control_img"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    app:anim_direction="positive"
+                    app:anim_duration="100"
+                    app:bg_color="#00ffffff"
+                    app:btn_color="?attr/main_color"
+                    app:gap_width="30"
+                    app:space_padding="1" />
+                <!--上一曲-->
+                <ImageView
+                    android:id="@+id/last_music_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="32dp"
+                    android:scaleType="centerInside"
+                    android:layout_toStartOf="@id/play_control_img"
+                    android:src="@drawable/ic_ac_main_play_last" />
+                <!--下一曲-->
+                <ImageView
+                    android:id="@+id/play_next_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:scaleType="centerInside"
+                    android:layout_toEndOf="@id/play_control_img"
+                    android:src="@drawable/ic_ac_main_play_next" />
+
+                <ImageView
+                    android:id="@+id/playqueue_img"
+                    android:layout_width="36dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="32dp"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_main_play_list" />
+                <!--左侧播放模式的按钮-->
+                <ImageView
+                    android:id="@+id/m_Play_Type_Button"
+                    android:layout_width="36dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_play_type_random" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/volume_sub"
+                    android:layout_width="36dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_sub_volume" />
+
+                <app.minimize.com.seek_bar_compat.SeekBarCompat
+                    android:id="@+id/lock_seek_bar2"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:progressBackgroundColor="@color/general_lowgray"
+                    app:progressColor="?attr/main_color"
+                    app:thumbColor="?attr/main_color" />
+
+                <ImageView
+                    android:id="@+id/volume_add"
+                    android:layout_width="36dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_add_volume" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5">
+
+            <!--放滑动解锁的view-->
+            <com.ncorti.slidetoact.SlideToActView
+                android:id="@+id/sweep_unlock_view"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                app:area_margin="0dp"
+                app:inner_color="?attr/main_bk_color"
+                app:outer_color="?attr/main_color"
+                app:slider_height="56dp"
+                app:slider_locked="false"
+                app:text="滑动解锁"
+                app:text_size="17sp" />
+
+            <ImageView
+                android:id="@+id/music_img"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_above="@id/sweep_unlock_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

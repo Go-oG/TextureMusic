@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:id="@+id/m_video_frame">
+
+        <wzp.com.texturemusic.customview.VideoControllerView
+            android:id="@+id/m_videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:showBarrageImg="false"
+            app:showCameraImg="false"
+            app:showGifImg="false"
+            app:showLockScreenImg="false" />
+
+        <TextView
+            android:id="@+id/m_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/m_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+

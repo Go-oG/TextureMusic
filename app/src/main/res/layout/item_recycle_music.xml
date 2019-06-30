@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_music_info"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/item_operation_img"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_nav_operation"
+        android:tint="?attr/item_text_sub_color"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/item_music_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="?attr/item_text_sub_color"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_operation_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_music_index_tv"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textColor="?attr/item_text_sub_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_music_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="200dp"
+        android:textColor="?attr/item_text_main_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/item_music_index_tv" />
+
+    <TextView
+        android:id="@+id/item_music_album"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="?attr/item_text_sub_color"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@id/item_music_time"
+        app:layout_constraintStart_toEndOf="@id/item_music_index_tv"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+    <ImageView
+        android:id="@+id/item_show_mv_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="2dp"
+        android:src="@drawable/ic_textdrawable_mv"
+        app:layout_constraintBottom_toTopOf="@id/item_music_album"
+        app:layout_constraintStart_toEndOf="@id/item_music_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

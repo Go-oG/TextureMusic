@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6e75a4</color>
+    <color name="colorPrimaryDark">#6e75a4</color>
+    <color name="colorAccent">#6e75a4</color>
+    <color name="color_main">#6e75a4</color>
+    <color name="color_driver">#dddddd</color>
+    <color name="color0">#cfd8dc</color>
+    <color name="color1">#6e75a4</color>
+    <color name="colo2">#8b81c3</color>
+    <color name="color3">#7b90d2</color>
+    <color name="colo4">#673ab7</color>
+    <color name="color5">#5c6bc0</color>
+    <color name="colo6">#2196f3</color>
+    <color name="color7">#9c27b0</color>
+    <color name="colo8">#03a9f4</color>
+    <color name="color9">#009688</color>
+    <color name="color10">#4caf50</color>
+    <color name="color11">#8bc34a</color>
+    <color name="colo12">#cddc39</color>
+    <color name="color13">#795548</color>
+    <color name="colo14">#9e9e9e</color>
+    <color name="color15">#607d8b</color>
+    <color name="color16">#999999</color>
+    <color name="color17">#b2b2b2</color>
+    <color name="color18">#666666</color>
+    <color name="color19">#111214</color>
+    <color name="color20">#263238</color>
+    <color name="color21">#3f51b5</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+
+
+    <color name="important_red">#ce3d3a</color>
+    <color name="important_black">#333333</color>
+    <color name="important_blue">#477aac</color>
+    <!--一般情况下使用-->
+    <color name="general_supergray">#666666</color>
+    <color name="general_hightgray">#888888</color>
+    <color name="general_normalgray">#999999</color>
+    <color name="general_lowgray">#b2b2b2</color>
+    <color name="general_superlowgray">#cccccc</color>
+    <!--较弱-->
+    <color name="weak_white">#f2f4f5</color>
+    <color name="weak_lowwhite">#0D000000</color>
+    <color name="weak_deepwhite">#1A000000</color>
+
+    <!--夜间模式-->
+    <!--重要颜色-->
+    <color name="important_red_night">#902b2b</color>
+    <color name="important_black_night">#adaeb3</color>
+    <color name="important_blue_night">#2b6e90</color>
+    <!--一般情况下使用-->
+    <color name="general_supergray_night">#75777e</color>
+    <color name="general_hightgray_night">#6b6c74</color>
+    <color name="general_normalgray_night">#5b5d63</color>
+    <color name="general_lowgray_night">#3e3f43</color>
+    <color name="general_superlowgray_night">#303134</color>
+    <!--较弱-->
+    <color name="weak_white_night">#111214</color>
+    <color name="weak_lowwhite_night">#08ffffff</color>
+    <color name="weak_deepwhite_night">#0Dffffff</color>
+    <color name="alpha_color">#4d000000</color>
+    <color name="widget_sub_color">#dddddd</color>
+
+    <color name="black_87">#de000000</color>
+    <color name="black_54">#89000000</color>
+    <color name="black_38">#61000000</color>
+    <color name="black_12">#1e000000</color>
+    <color name="back_color_b">#303030</color>
+
+    <color name="white_100">#ffffffff</color>
+    <color name="white_70">#b3ffffff</color>
+    <color name="white_50">#7fffffff</color>
+    <color name="white_12">#1effffff</color>
+    <color name="white_38">#61ffffff</color>
+    <color name="back_color_w">#f5f5f5</color>
+</resources>

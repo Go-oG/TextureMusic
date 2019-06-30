@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">TextureMusic</string>
+    <string name="sharemusicimg">sharemusicimg</string>
+    <string name="shareplaybtn">shareplaybtn</string>
+    <string name="sharemusicnametv">sharemusicnamtv</string>
+    <string name="sharealbumnametv">sharealbumnametv</string>
+    <string name="sharenextbtn">sharenextbtn</string>
+    <string name="sharealbumdetail">sharealbumdetail</string>
+    <string name="shareartistdetail">shareartistdetail</string>
+    <string name="shareplaylistdetail">shareplaylistdetail</string>
+    <string name="sharedjdetail">sharedjdetail</string>
+    <string name="shareMvDetail">shareMvdetail</string>
+    <string name="app_description">" 本项目作为本人毕业设计之用,无任何其他商业用途，APP内所有网络资源属于网易云音乐，如有侵权请告知，本人将下架APP并终止项目中有关侵权部分的开发。
+     以下为本项目所用到的开源项目，再次感谢以下开源项目：
+\tOkHttp
+ <a href="https://github.com/square/okhttp"> https://github.com/square/okhttp</a>
+
+\tRxJava
+ <a href="https://github.com/ReactiveX/RxJava"> https://github.com/ReactiveX/RxJava</a>
+
+\tRxAndroid
+ <a href="https://github.com/ReactiveX/RxAndroid"> https://github.com/ReactiveX/RxAndroid</a>
+
+\tRetrofit
+ <a href="https://github.com/square/retrofit"> https://github.com/square/retrofit</a>
+
+\tGlide
+ <a href="https://github.com/bumptech/glide"> https://github.com/bumptech/glide</a>
+
+\tNativeStackBlur
+ <a href="https://github.com/Commit451/NativeStackBlur">https://github.com/Commit451/NativeStackBlur</a>
+
+\tVlayout
+ <a href="https://github.com/alibaba/vlayout"> https://github.com/alibaba/vlayout</a>
+
+\tExoplayer
+ <a href="https://github.com/google/ExoPlayer"> https://github.com/google/ExoPlayer</a>
+
+\tRxlifecycle
+ <a href="https://github.com/trello/RxLifecycle"> https://github.com/trello/RxLifecycle</a>
+
+\tRxbinding
+ <a href="https://github.com/JakeWharton/RxBinding"> https://github.com/JakeWharton/RxBinding</a>
+
+\tVideocache
+ <a href="https://github.com/danikula/AndroidVideoCache"> https://github.com/danikula/AndroidVideoCache</a>
+
+"</string>
+
+</resources>

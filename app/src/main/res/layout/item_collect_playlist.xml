@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!--收藏的歌单的item布局-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_playlist"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <ImageView
+        android:id="@+id/item_playlist_cover"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_playlist_operation"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_nav_operation"
+        android:tint="?attr/main_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_playlist_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="16dp"
+        android:singleLine="true"
+        android:textColor="?attr/item_text_main_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toStartOf="@id/item_playlist_operation"
+        app:layout_constraintStart_toEndOf="@id/item_playlist_cover" />
+
+    <TextView
+        android:id="@+id/item_fine_playlist_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:textColor="?attr/item_text_sub_color"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@id/item_playlist_operation"
+        app:layout_constraintStart_toEndOf="@id/item_playlist_cover"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="16dp"
+        android:background="?attr/item_driver_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_playlist_cover" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

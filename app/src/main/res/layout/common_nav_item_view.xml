@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/ac_main_navlayout"
+android:layout_width="280dp"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+android:background="?attr/main_bk_color">
+
+<RelativeLayout
+    android:id="@+id/ac_index_nav_top"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/db_main_nav_head">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_user_imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:src="@mipmap/logo"
+        app:civ_border_color="#00ff0000"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/item_one_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_user_imageView"
+        android:layout_marginStart="16dp"
+        android:paddingTop="16dp"
+        android:text="TextureMusic"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/ac_index_nav_top">
+
+    <wzp.com.texturemusic.customview.SpringScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:id="@+id/spring_scrollview">
+
+        <LinearLayout
+            android:id="@+id/common_nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/nav_item_local_music"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_vector_music_photo"
+                    android:tint="?attr/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="本地音乐"
+                    android:textColor="?attr/text_main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_item_collect"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_nav_item_collect"
+                    android:tint="?attr/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="我的收藏"
+                    android:textColor="?attr/text_main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_item_history"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_vector_music_history"
+                    android:tint="?attr/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="播放记录"
+                    android:textColor="?attr/text_main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_item_download_manage"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_vector_music_download"
+                    android:tint="?attr/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="下载管理"
+                    android:textColor="?attr/text_main_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="?attr/main_color" />
+
+            <LinearLayout
+                android:id="@+id/nav_item_theme"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_theme"
+                    android:tint="?attr/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="个性皮肤"
+                    android:textColor="?attr/text_main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_item_timing"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_history"
+                    android:tint="?attr/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="定时停止播放"
+                    android:textColor="?attr/text_main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_item_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_alarm_clock"
+                    android:tint="?attr/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="音乐闹钟"
+                    android:textColor="?attr/text_main_color" />
+            </LinearLayout>
+
+                       <LinearLayout
+                android:id="@+id/nav_item_about"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_about_app"
+                    android:tint="?attr/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="关于"
+                    android:textColor="?attr/text_main_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="?attr/main_color" />
+
+        </LinearLayout>
+
+    </wzp.com.texturemusic.customview.SpringScrollView>
+
+    <LinearLayout
+        android:id="@+id/ac_index_nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/main_bk_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/nav_item_exit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:src="@drawable/ic_exit"
+                android:tint="?attr/main_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="退出"
+                android:textColor="?attr/text_main_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_item_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_app_setting"
+                android:tint="?attr/main_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="设置"
+                android:textColor="?attr/text_main_color" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
+</RelativeLayout>

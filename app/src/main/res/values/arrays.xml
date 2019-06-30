@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="songlistname">
+        <item>全部</item>
+        <item>欧美</item>
+        <item>日语</item>
+        <item>粤语</item>
+        <item>流行</item>
+        <item>摇滚</item>
+        <item>民谣</item>
+        <item>电子</item>
+        <item>舞曲</item>
+        <item>乡村</item>
+        <item>清晨</item>
+        <item>夜晚</item>
+        <item>学习</item>
+        <item>午休</item>
+        <item>运动</item>
+        <item>工作</item>
+        <item>怀旧</item>
+        <item>清新</item>
+        <item>治愈</item>
+        <item>孤独</item>
+        <item>放松</item>
+        <item>浪漫</item>
+        <item>ACG</item>
+        <item>影视原声</item>
+    </string-array>
+
+    <string-array name="radiolistname">
+        <item>明星做主播</item>
+        <item>创作|翻唱</item>
+        <item>脱口秀</item>
+        <item>情感频道</item>
+        <item>音乐故事</item>
+        <item>有声小说</item>
+        <item>人文历史</item>
+        <item>亲子宝贝</item>
+        <item>美文读物</item>
+        <item>外语世界</item>
+        <item>3D|电子</item>
+        <item>二次元</item>
+        <item>旅途|城市</item>
+        <item>校园|教育</item>
+        <item>娱乐|影视</item>
+        <item>广播剧</item>
+        <item>相声曲艺</item>
+    </string-array>
+    <integer-array name="radiolistIds">
+        <item>1</item>
+        <item>2001</item>
+        <item>5</item>
+        <item>3</item>
+        <item>2</item>
+        <item>13</item>
+        <item>11</item>
+        <item>14</item>
+        <item>6</item>
+        <item>13</item>
+        <item>10002</item>
+        <item>3001</item>
+        <item>12</item>
+        <item>4001</item>
+        <item>4</item>
+        <item>7</item>
+        <item>8</item>
+    </integer-array>
+
+    <string-array name="timewindow">
+        <item>不开启</item>
+        <item>10分钟后</item>
+        <item>20分钟后</item>
+        <item>30分钟后</item>
+        <item>45分钟后</item>
+        <item>60分钟后</item>
+        <item>自定义</item>
+    </string-array>
+    <integer-array name="timewindowIds">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>-1</item>
+    </integer-array>
+
+</resources>

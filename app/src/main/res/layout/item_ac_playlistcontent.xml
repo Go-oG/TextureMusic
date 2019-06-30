@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/songcon_rec_item_xuhao_tv"
+        android:layout_width="48dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="#999999"/>
+
+    <FrameLayout
+        android:id="@+id/songcon_rec_item_frame"
+        android:layout_width="48dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_vector_menulist"
+            android:tint="#b2b2b2"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_toEndOf="@id/songcon_rec_item_xuhao_tv"
+        android:layout_toStartOf="@id/songcon_rec_item_frame"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/songcon_rec_item_musictitle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:maxEms="14"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/songcon_rec_item_musicername_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#999999"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

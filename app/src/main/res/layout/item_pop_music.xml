@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于显示Music的常用的操作-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_item_linear"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="?attr/main_bk_color">
+
+    <ImageView
+        android:id="@+id/pop_item_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:tint="?attr/main_color" />
+
+    <TextView
+        android:id="@+id/pop_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/pop_item_img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="?attr/item_text_main_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:background="?attr/item_driver_color" />
+
+
+</RelativeLayout>

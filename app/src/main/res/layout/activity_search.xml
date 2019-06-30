@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?><!--搜索界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/m_root_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ac_search_linear"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/main_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ac_search_break_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_nav_break"
+            android:tint="?attr/img_tint_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ac_search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:hint="音乐、mv、专辑、电台"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#dddddd"
+                android:textCursorDrawable="@null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dddddd" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/m_main_content_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/ac_search_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="?attr/tablayout_bk_color"
+                app:tabIndicatorColor="?attr/tablayout_indicator_color"
+                app:tabIndicatorHeight="2dp"
+                app:tabSelectedTextColor="?attr/tablayout_text_select_color"
+                app:tabTextColor="?attr/tablayout_text_unselect_color" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/ac_search_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/show_history_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="热门搜索"
+                android:textColor="?attr/item_text_sub_color" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/m_flexbox_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/m_hot_search_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/m_suggest_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/m_start_search_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:textColor="?attr/item_text_sub_color"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="?attr/item_driver_color" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/m_suggest_recyclever"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</LinearLayout>

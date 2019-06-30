@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--IndexPersonFragment通用的recycleview布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_index_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/comment_index_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="128dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/comment_index_playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/text_three_color" />
+
+        <TextView
+            android:id="@+id/comment_index_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:textColor="?attr/text_three_color"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/comment_index_play_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxHeight="36dp"
+            android:maxWidth="36dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/comment_index_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textColor="?attr/item_text_main_color"
+        android:textSize="15sp" />
+
+</LinearLayout>

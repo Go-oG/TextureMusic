@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <wzp.com.texturemusic.customview.CommonNavView
+            android:id="@+id/nav_certifition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:contentText="认证信息"
+            app:textSize="4sp" />
+
+        <TextView
+            android:id="@+id/certifition_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+        <wzp.com.texturemusic.customview.CommonNavView
+            android:id="@+id/nav_person_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:contentText="个人信息"
+            app:textColor="?attr/main_color"
+            app:leftViewColor="?attr/main_color"
+            app:textSize="4sp" />
+
+        <TextView
+            android:id="@+id/level_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="?attr/item_text_sub_color" />
+
+        <TextView
+            android:id="@+id/gender_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="?attr/item_text_sub_color" />
+
+        <TextView
+            android:id="@+id/area_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="?attr/item_text_sub_color" />
+
+        <wzp.com.texturemusic.customview.CommonNavView
+            android:id="@+id/nav_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:contentText="个人介绍"
+            app:textColor="?attr/main_color"
+            app:leftViewColor="?attr/main_color"
+            app:textSize="4sp" />
+
+        <TextView
+            android:id="@+id/person_introduce_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="?attr/item_text_sub_color" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

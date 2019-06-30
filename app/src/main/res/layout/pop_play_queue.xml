@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!--显示播放队列的数据-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/main_bk_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/m_top_relative"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/main_color">
+
+        <TextView
+            android:id="@+id/pop_playmode_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pop_download_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="4dp"
+                android:drawableStart="@drawable/ic_pop_download_tvdb"
+                android:gravity="center_vertical"
+                android:text="下载全部"
+                android:textColor="#ffffff" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="#a3ffffff" />
+
+            <FrameLayout
+                android:id="@+id/pop_delete_all"
+                android:layout_width="36dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_pop_item_delete" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pop_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:maxHeight="450dp" />
+
+</LinearLayout>

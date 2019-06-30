@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--搜索界面单曲/电台的布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_song_item"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:id="@+id/item_song_operation"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_nav_operation"
+        android:tint="?attr/main_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_toStartOf="@id/item_song_operation"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="?attr/item_text_main_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_song_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="?attr/item_text_sub_color"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?attr/item_driver_color"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

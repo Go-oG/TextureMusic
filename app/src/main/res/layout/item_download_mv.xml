@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/m_item_content"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/item_operation_img"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_pop_item_delete"
+        android:tint="?attr/item_text_sub_color"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/item_mv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:maxLines="1"
+        android:textColor="?attr/item_text_main_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toStartOf="@id/item_operation_img"
+        app:layout_constraintStart_toEndOf="@id/item_img" />
+
+    <TextView
+        android:id="@+id/item_mv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:textColor="?attr/item_text_sub_color"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@id/item_img"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

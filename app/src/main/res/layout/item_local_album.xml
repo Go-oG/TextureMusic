@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/local_album_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    app:cardBackgroundColor="?attr/main_bk_color">
+
+    <ImageView
+        android:id="@+id/local_album_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/local_album_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="200dp"
+        android:maxEms="8"
+        android:maxLines="2"
+        android:text="Angela"
+        android:textColor="?attr/item_text_sub_color"
+        android:textSize="17sp" />
+
+</androidx.cardview.widget.CardView>
+

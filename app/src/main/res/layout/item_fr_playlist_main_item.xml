@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--该布局为歌单 fragment中歌单列表的视图-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fr_playlist_main_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fr_playlist_main_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/shareplaylistdetail" />
+
+        <TextView
+            android:id="@+id/fr_playlist_main_playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_textdrawable_erji"
+            android:maxLines="1"
+            android:textColor="?attr/text_three_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/fr_playlist_main_creatername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="8dp"
+            android:drawableStart="@drawable/ic_persen_textdrawable"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:textColor="?attr/text_three_color"
+            android:textSize="13sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fr_playlist_main_listname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:maxEms="16"
+        android:maxLines="2"
+        android:textColor="?attr/item_text_main_color"
+        android:textSize="13sp" />
+
+</LinearLayout>

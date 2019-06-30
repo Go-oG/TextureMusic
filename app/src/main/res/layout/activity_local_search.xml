@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/main_color">
+
+        <ImageView
+            android:id="@+id/m_return_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_nav_break"
+            android:tint="?attr/img_tint_color"/>
+
+        <EditText
+            android:id="@+id/m_editText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/m_return_img"
+            android:drawableBottom="@drawable/drawable_bottom_line"
+            android:hint="搜索本地歌曲"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="?attr/img_tint_color"
+            android:maxLines="1" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/m_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</merge>

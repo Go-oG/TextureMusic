@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wzp.com.texturemusic.customview.CommonNavView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_nav_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:leftViewColor="?attr/main_color"
+    app:rightImgTint="?attr/main_color"
+    app:textColor="?attr/nav_text_color" />
+
+
+

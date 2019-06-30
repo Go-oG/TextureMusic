@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lyrics_1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:text="测试测试测试测试测试测试"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/lyrics_2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:text="测试测试测试测试测试测试"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:id="@+id/control_relative"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/desktop_play_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_index_play"
+            android:tint="@color/color_main"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

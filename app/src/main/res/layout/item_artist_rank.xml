@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--歌手排行榜中item的布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_artist_rank_rl"
+    android:layout_width="match_parent"
+    android:layout_height="84dp">
+
+    <LinearLayout
+        android:id="@+id/index_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_index_tv"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="?attr/item_text_sub_color" />
+
+        <TextView
+            android:id="@+id/item_sort_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textColor="?attr/item_text_sub_color"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_artist_coverimg"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/index_linear" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/item_artist_coverimg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_artist_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?attr/item_text_main_color"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/item_artist_score_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:drawableStart="@drawable/ic_huoyan_textdrawable"
+            android:maxLines="1"
+            android:textColor="?attr/item_text_sub_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/item_artist_topic_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:textColor="?attr/item_text_sub_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/main_color">
+
+        <ImageView
+            android:id="@+id/local_break_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_nav_break"
+            android:tint="?attr/img_tint_color" />
+
+        <TextView
+            android:id="@+id/local_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/local_break_img"
+            android:text="本地音乐"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/local_operation_img"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_navdrawable_refresh"
+            android:tint="?attr/img_tint_color" />
+
+        <ImageView
+            android:id="@+id/local_search_img"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/local_operation_img"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_search"
+            android:tint="?attr/img_tint_color" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/local_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/tablayout_bk_color"
+        app:tabIndicatorColor="?attr/tablayout_indicator_color"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="?attr/tablayout_text_select_color"
+        app:tabTextColor="?attr/tablayout_text_unselect_color" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/local_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</merge>

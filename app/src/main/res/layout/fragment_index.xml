@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!--indexActivity界面通用的布局-->
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fr_index_swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fr_index_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

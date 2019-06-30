@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><!--精品歌单的横向布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_fine2_relative"
+    android:layout_width="match_parent"
+    android:layout_height="114dp">
+
+    <FrameLayout
+        android:id="@+id/item_fine_frame"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:id="@+id/item_fine2_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom|start"/>
+
+        <TextView
+            android:id="@+id/item_fine_playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_textdrawable_erji"
+            android:textColor="?attr/item_drawable_tint_color"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/item_fine_frame"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_fine_playlist_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="?attr/item_text_main_color"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/item_fine_user_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_fine_user_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/item_fine_user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:textColor="?attr/item_text_sub_color"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_fine_playlist_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textColor="?attr/item_text_sub_color"
+            android:maxLines="2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/item_fine_frame"
+        android:background="?attr/item_driver_color" />
+
+</RelativeLayout>

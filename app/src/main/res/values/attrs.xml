@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonNavView">
+        <attr name="leftViewColor" format="color" />
+        <attr name="contentText" format="string|reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="rightImgSrc" format="reference" />
+        <attr name="rightImgTint" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SecondProgressBar">
+        <attr name="defaultWidth" format="dimension" />
+        <attr name="defaultHeight" format="dimension" />
+        <attr name="viewBackColor" format="color" />
+        <attr name="centerProgressColor" format="color" />
+        <attr name="topProgressColor" format="color" />
+        <attr name="pointColor" format="color" />
+        <attr name="centerValue" format="integer" />
+        <attr name="centerMaxValue" format="integer" />
+        <attr name="topValue" format="integer" />
+        <attr name="topMaxValue" format="integer" />
+        <attr name="progressHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="cs_CircularSeekBar">
+        <attr name="cs_circle_style">
+            <enum name="butt" value="0" />
+            <enum name="round" value="1" />
+            <enum name="square" value="2" />
+        </attr>
+        <attr name="cs_progress" format="integer" />
+        <attr name="cs_max" format="integer" />
+        <attr name="cs_negative_enabled" format="boolean" />
+        <attr name="cs_move_outside_circle" format="boolean" />
+        <attr name="cs_maintain_equal_circle" format="boolean" />
+        <attr name="cs_use_custom_radii" format="boolean" />
+        <attr name="cs_lock_enabled" format="boolean" />
+        <attr name="cs_circle_x_radius" format="dimension" />
+        <attr name="cs_circle_y_radius" format="dimension" />
+        <attr name="cs_circle_stroke_width" format="dimension" />
+        <attr name="cs_disable_pointer" format="boolean" />
+        <attr name="cs_pointer_stroke_width" format="dimension" />
+        <attr name="cs_pointer_halo_width" format="dimension" />
+        <attr name="cs_pointer_halo_border_width" format="dimension" />
+        <attr name="cs_circle_fill" format="color" />
+        <attr name="cs_circle_color" format="color" />
+        <attr name="cs_circle_progress_color" format="color" />
+        <attr name="cs_pointer_color" format="color" />
+        <attr name="cs_pointer_halo_color" format="color" />
+        <attr name="cs_pointer_halo_color_ontouch" format="color" />
+        <attr name="cs_pointer_alpha_ontouch" format="integer" />
+        <attr name="cs_pointer_angle" format="float" />
+        <attr name="cs_start_angle" format="float" />
+        <attr name="cs_end_angle" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="VideoControllerView">
+        <attr name="showLockScreenImg" format="boolean" />
+        <attr name="showCameraImg" format="boolean" />
+        <attr name="showGifImg" format="boolean" />
+        <attr name="showBarrageImg" format="boolean" />
+        <attr name="showShareImg" format="boolean" />
+        <attr name="showExpandOperationImg" format="boolean" />
+        <attr name="showUnExpandOperationImg" format="boolean" />
+        <attr name="showUnExpandImg" format="boolean" />
+        <attr name="showExpandImg" format="boolean" />
+        <attr name="showUnExpandTimeTv" format="boolean" />
+        <attr name="showExpandResolutionTv" format="boolean" />
+        <attr name="showExpandStartTimeTv" format="boolean" />
+        <attr name="showExpandEndTimeTv" format="boolean" />
+
+        <attr name="showExpandNextImg" format="boolean" />
+        <attr name="showUnExpandNextImg" format="boolean" />
+
+        <attr name="expandNavTitleColor" format="color|reference" />
+        <attr name="expandStartTimeTvColor" format="color|reference" />
+        <attr name="expandEndTimeTvColor" format="color|reference" />
+        <attr name="expandResolutionTvColor" format="color|reference" />
+        <attr name="unExpandNavTitleColor" format="color|reference" />
+        <attr name="unExpandTimeTvColor" format="color|reference" />
+
+        <attr name="expandNavTitleSize" format="dimension" />
+        <attr name="expandStartTimeTvSize" format="dimension" />
+        <attr name="expandEndTimeTvSize" format="dimension" />
+        <attr name="expandResolutionTvSize" format="dimension" />
+        <attr name="unExpandNavTitleSize" format="dimension" />
+        <attr name="unExpandTimeTvSize" format="dimension" />
+
+        <attr name="expandNavReturnImgSrc" format="reference" />
+        <attr name="expandShareImgSrc" format="reference" />
+        <attr name="expandOperationImgSrc" format="reference" />
+        <attr name="expandBarrageImgSrc" format="reference" />
+        <attr name="expandPlayImgSrc" format="reference" />
+        <attr name="expandNextImgSrc" format="reference" />
+        <attr name="lockScreenImgSrc" format="reference" />
+        <attr name="cameraImgSrc" format="reference" />
+        <attr name="gifImgSrc" format="reference" />
+        <attr name="unExpandNavReturnImgSrc" format="reference" />
+        <attr name="unExpandOperationImgSrc" format="reference" />
+        <attr name="unExpandPlayImgSrc" format="reference" />
+        <attr name="unExpandNextImgSrc" format="reference" />
+        <attr name="expandImgSrc" format="reference" />
+        <attr name="unExpandImgSrc" format="reference" />
+        <attr name="coverPlaceholderImgSrc" format="reference"/>
+
+        <attr name="autoHintTime" format="integer" />
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?><!--自定义的video 控制界面-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wzp_video_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:longClickable="true">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/wzp_video_centervertical_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextureView
+        android:id="@+id/wzp_video_texture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/wzp_video_unexpand_top_relative"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/wzp_video_unexpand_nav_return_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_break" />
+
+        <ImageView
+            android:id="@+id/wzp_video_unexpand_nav_operation_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_video_more" />
+
+        <TextView
+            android:id="@+id/wzp_video_unexpand_nav_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/wzp_video_unexpand_nav_return_img"
+            android:layout_toStartOf="@id/wzp_video_unexpand_nav_operation_img"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wzp_video_expand_top_relative"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/wzp_video_expand_nav_return_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_break" />
+
+        <ImageView
+            android:id="@+id/wzp_video_expand_nav_operation_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_video_more" />
+
+        <ImageView
+            android:id="@+id/wzp_video_expand_nav_share_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/wzp_video_expand_nav_operation_img"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_share" />
+
+        <ImageView
+            android:id="@+id/wzp_video_expand_nav_barrage_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/wzp_video_expand_nav_share_img"
+            android:src="@drawable/ic_barrage_close" />
+
+        <TextView
+            android:id="@+id/wzp_video_expand_nav_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/wzp_video_expand_nav_return_img"
+            android:layout_toStartOf="@id/wzp_video_expand_nav_barrage_img"
+            android:maxLines="1"
+            android:text="TEXT"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/wzp_video_lock_screen"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_video_open_lock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wzp_video_camera_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_video_camera"
+        app:layout_constraintBottom_toBottomOf="@id/wzp_video_centervertical_line"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/wzp_video_gif_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_video_gif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/wzp_video_centervertical_line" />
+
+    <RelativeLayout
+        android:id="@+id/wzp_video_expand_bottom_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/wzp_video_expand_play_img"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/exo_controls_play" />
+
+        <ImageView
+            android:id="@+id/wzp_video_expand_next_img"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/wzp_video_expand_play_img"
+            android:src="@drawable/exo_controls_next" />
+
+        <ImageView
+            android:id="@+id/wzp_video_expand_unexpand_img"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/wzp_video_expand_resolution_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/wzp_video_expand_unexpand_img"
+            android:padding="8dp"
+            android:text="分辨率"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/wzp_video_expand_starttime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/wzp_video_expand_next_img"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/wzp_video_expand_endtime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/wzp_video_expand_resolution_tv"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <app.minimize.com.seek_bar_compat.SeekBarCompat
+            android:id="@+id/wzp_video_expand_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/wzp_video_expand_starttime_tv"
+            android:layout_toStartOf="@id/wzp_video_expand_endtime_tv"
+            app:progressBackgroundColor="@color/general_lowgray"
+            app:progressColor="#ffffff"
+            app:thumbAlpha="1.0"
+            app:thumbColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wzp_video_unexpand_bottom_relative"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/wzp_video_unexpand_play_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/exo_controls_play" />
+
+        <ImageView
+            android:id="@+id/wzp_video_unexpand_next_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/wzp_video_unexpand_play_img"
+            android:src="@drawable/exo_controls_next" />
+
+        <TextView
+            android:id="@+id/wzp_video_unexpand_starttime_endtime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/wzp_video_unexpand_next_img"
+            android:text="07:42/09:21"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/wzp_video_unexpand_expand_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_expand" />
+
+        <app.minimize.com.seek_bar_compat.SeekBarCompat
+            android:id="@+id/wzp_video_unexpand_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/wzp_video_unexpand_starttime_endtime_tv"
+            android:layout_toStartOf="@id/wzp_video_unexpand_expand_img"
+            app:progressBackgroundColor="@color/general_lowgray"
+            app:progressColor="#ffffff"
+            app:thumbAlpha="1.0"
+            app:thumbColor="#ffffff" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

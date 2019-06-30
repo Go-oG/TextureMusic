@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="wzp.com.texturemusic">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <!-- 短信验证登陆功能需要添加次权限来自动填充验证码，用不到可以去掉 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <!--自定义Activity-->
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".indexmodule.IndexActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".localmodule.ui.MainPlayActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <!--增加默认音频文件打开方式选择-->
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".localmodule.ui.activity.LockScreenActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".lockScreenTask" />
+        <activity
+            android:name=".searchmodule.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".artistmodule.ArtistActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mvmodule.MvActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".localmodule.ui.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".localmodule.ui.activity.AppAboutActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".localmodule.ui.LocalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".localmodule.ui.activity.PlayHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".downloadmodule.DownloadActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".playlistmodule.FinePlayListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".songmodule.NewestMusicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".artistmodule.ui.ArtistDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".djmodule.ui.DjDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvmodule.MvDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".djmodule.ui.DjRankActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".albummodule.NetAlbumDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".playlistmodule.ui.PlayListTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usermodule.UserDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".djmodule.ui.DjTypeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".localmodule.ui.activity.DesktopLyricsActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".localmodule.ui.activity.SetAlarmClockRingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".localmodule.ui.activity.LocalArtistDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".localmodule.ui.activity.LocalSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".localmodule.ui.activity.SetThemeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".common.ui.CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ui.ShowImgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".localmodule.ui.activity.CacheSetActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".common.ui.MultipleChoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".albummodule.ui.NewAlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".albummodule.LocalAlbumDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".common.ui.SimilarMusicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".playlistmodule.PlaylistDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".localmodule.ui.activity.LocalCollectActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".localmodule.ui.activity.LocalThemeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".artistmodule.ui.ArtistDetailFullDescriptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".artistmodule.ui.ArtistAllSongActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".artistmodule.ui.ArtistRankActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!--自定义service-->
+        <service android:name=".core.service.MediaService" />
+        <service android:name=".core.service.DownloadService" />
+
+        <!--第三方activity-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- ShareSDK的activity -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".core.reciver.AlarmReciver">
+            <intent-filter>
+                <action android:name="wzp.com.AlarmReciver" />
+            </intent-filter>
+        </receiver>
+
+        <!--桌面小部件-->
+        <receiver android:name=".widgetmodule.DesktopWidget">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <!--适配Android 7.0以上FileUriExposedException-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="wzp.com.texturemusic.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

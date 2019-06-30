@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--搜索fragment中用户的item布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_user_item"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_user_head_img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/item_user_head_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="?attr/item_text_main_color"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/item_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:textColor="?attr/item_text_sub_color"
+            android:maxLines="1"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/item_user_head_img"
+        android:background="?item_driver_color" />
+
+
+</RelativeLayout>

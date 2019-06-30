@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!--recycleview第一个item选择菜单-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_select_view"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:id="@+id/item_select_play_all_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_ac_mainplay_play"
+        android:tint="?attr/main_color" />
+
+    <TextView
+        android:id="@+id/item_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/item_select_play_all_img"
+        android:text="播放全部"
+        android:textColor="?attr/item_text_sub_color"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/item_select_operation_linear">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_textdrawable_list"
+            android:tint="?attr/item_text_sub_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="4dp"
+            android:text="多选"
+            android:textColor="?attr/item_text_sub_color" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

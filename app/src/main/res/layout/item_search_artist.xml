@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!--搜索界面艺术家的布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_artist_parent"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <ImageView
+        android:id="@+id/item_artist_img"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:transitionName="@string/shareartistdetail"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/item_artist_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxEms="25"
+            android:maxLines="1"
+            android:maxWidth="96dp"
+            android:textColor="?attr/item_text_main_color"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/item_artist_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="25"
+            android:maxLines="1"
+            android:maxWidth="96dp"
+            android:textColor="?attr/item_text_sub_color"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_artist_operation"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_nav_operation"
+        android:tint="?attr/main_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/item_artist_img"
+        android:background="?attr/item_driver_color" />
+
+</RelativeLayout>

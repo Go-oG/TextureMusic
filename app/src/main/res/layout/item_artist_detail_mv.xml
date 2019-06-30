@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_item"
+    android:layout_width="match_parent"
+    android:layout_height="78dp">
+
+    <FrameLayout
+        android:id="@+id/item_frame"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dp">
+
+        <ImageView
+            android:id="@+id/mv_img"
+            android:layout_width="96dp"
+            android:layout_height="68dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/mv_playcount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="end" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/item_frame"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mv_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="?attr/item_text_main_color" />
+
+        <TextView
+            android:id="@+id/mv_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="?attr/item_text_sub_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/item_frame"
+        android:background="?attr/item_driver_color" />
+
+</RelativeLayout>

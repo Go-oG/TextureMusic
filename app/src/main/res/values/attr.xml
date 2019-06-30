@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于实现皮肤换肤-->
+<resources>
+    <attr name="main_color" format="color|reference" />
+    <attr name="main_bk_color" format="color|reference" />
+    <attr name="img_tint_color" format="color|reference" />
+    <attr name="text_main_color" format="color|reference" />
+    <attr name="text_other_color" format="reference|color" />
+    <attr name="text_three_color" format="color|reference" />
+    <attr name="recycleview_bk_color" format="color|reference" />
+    <attr name="item_text_color" format="color|reference" />
+    <attr name="item_drawable_tint_color" format="color|reference" />
+    <attr name="tablayout_text_unselect_color" format="color|reference" />
+    <attr name="tablayout_text_select_color" format="color|reference" />
+    <attr name="tablayout_bk_color" format="color|reference" />
+    <attr name="nav_text_color" format="color|reference" />
+    <attr name="item_driver_color" format="color|reference" />
+    <attr name="tablayout_indicator_color" format="color|reference" />
+    <attr name="item_text_main_color" format="color|reference" />
+    <attr name="item_text_sub_color" format="reference|color" />
+</resources>

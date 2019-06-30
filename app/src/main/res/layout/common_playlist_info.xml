@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?><!--公用的歌单详情-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/m_collection_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/m_like_img"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            android:src="@drawable/ic_collection"
+            android:tint="?attr/img_tint_color" />
+
+        <TextView
+            android:id="@+id/m_collection_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="?attr/text_three_color"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/m_comment_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            android:src="@drawable/ic_vector_play_msg"
+            android:tint="?attr/img_tint_color" />
+
+        <TextView
+            android:id="@+id/m_comment_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="?attr/text_three_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/m_share_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            android:src="@drawable/ic_share"
+            android:tint="?attr/img_tint_color" />
+
+        <TextView
+            android:id="@+id/m_sharecount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="?attr/text_three_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/m_download_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="32dp"
+            android:maxWidth="32dp"
+            android:src="@drawable/ic_vector_music_download"
+            android:tint="?attr/img_tint_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:text="下载"
+            android:textColor="?attr/text_three_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

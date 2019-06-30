@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/m_constrain_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageSwitcher
+        android:id="@+id/img_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/main_play_bk"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="72dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <View
+        android:id="@+id/top_status_bar"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/m_OperationImg"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:scaleType="centerInside"
+        android:tint="?attr/img_tint_color"
+        app:layout_constraintBottom_toBottomOf="@id/h_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_status_bar"
+        app:srcCompat="@drawable/ic_share" />
+
+    <ImageView
+        android:id="@+id/return_img"
+        android:layout_width="32dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="8dp"
+        android:tint="?attr/img_tint_color"
+        app:layout_constraintBottom_toBottomOf="@id/h_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_status_bar"
+        app:srcCompat="@drawable/ic_nav_break" />
+
+    <ImageView
+        android:id="@+id/m_comment_Img"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_mainplay_comment"
+        android:tint="?attr/img_tint_color"
+        app:layout_constraintBottom_toBottomOf="@id/h_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/m_OperationImg"
+        app:layout_constraintTop_toBottomOf="@+id/top_status_bar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/h_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/m_comment_Img"
+        app:layout_constraintStart_toEndOf="@+id/return_img"
+        app:layout_constraintTop_toBottomOf="@+id/top_status_bar">
+
+        <TextView
+            android:id="@+id/music_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="?attr/img_tint_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/artist_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:drawableEnd="@drawable/ic_textview_goto"
+            android:drawablePadding="0dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="?attr/img_tint_color"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/m_center_frame"
+        android:layout_width="0dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h_guideline">
+
+        <wzp.com.texturemusic.customview.CustomPath
+            android:id="@+id/m_path_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/m_Music_cover_img"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/logo"
+            android:transitionName="@string/sharemusicimg" />
+
+
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:id="@+id/m_Progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_gravity="center"
+            app:cs_circle_color="#ffffff"
+            app:cs_circle_progress_color="?attr/main_color"
+            app:cs_circle_stroke_width="6dp"
+            app:cs_disable_pointer="false"
+            app:cs_end_angle="405"
+            app:cs_lock_enabled="false"
+            app:cs_move_outside_circle="true"
+            app:cs_negative_enabled="true"
+            app:cs_pointer_stroke_width="6dp"
+            app:cs_start_angle="135" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/m_center_relative"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="74dp"
+        android:layout_marginStart="74dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h_line_2">
+
+        <TextView
+            android:id="@+id/start_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="?attr/img_tint_color" />
+
+        <TextView
+            android:id="@+id/end_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="0:00"
+            android:textColor="?attr/img_tint_color" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/m_play_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/m_center_relative">
+
+        <wzp.com.texturemusic.customview.MusicVerticalFFTView
+            android:id="@+id/music_FFT_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="48dp"
+            android:alpha="0.5" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/img_collect"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_nav_item_collect" />
+
+            <ImageView
+                android:id="@+id/img_download"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@id/img_collect"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_vector_music_download" />
+
+            <ImageView
+                android:id="@+id/img_similer"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@id/img_download"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_similer_music" />
+
+            <ImageView
+                android:id="@+id/img_album_info"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@id/img_similer"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_pop_item_album" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/m_Music_Name_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="?attr/img_tint_color"
+                android:textSize="33sp"
+                android:transitionName="@string/sharemusicnametv" />
+
+            <wzp.com.texturemusic.customview.CarouselTextView
+                android:id="@+id/m_Music_Info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="-1"
+                android:singleLine="true"
+                android:textColor="?attr/img_tint_color"
+                android:textSize="21sp"
+                android:transitionName="@string/sharealbumnametv" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--中间控制播放、暂停的按钮-->
+    <com.freedom.lauzy.playpauseviewlib.PlayPauseView
+        android:id="@+id/m_play_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:transitionName="@string/shareplaybtn"
+        app:anim_direction="positive"
+        app:anim_duration="200"
+        app:bg_color="#00ffffff"
+        app:btn_color="#ffffff"
+        app:gap_width="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:space_padding="1" />
+    <!--上一曲-->
+    <ImageView
+        android:id="@+id/m_Last_Button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_ac_main_play_last"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/m_play_button" />
+    <!--下一曲-->
+    <ImageView
+        android:id="@+id/m_Next_Button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_ac_main_play_next"
+        android:transitionName="@string/sharenextbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/m_play_button" />
+
+    <ImageView
+        android:id="@+id/m_playqueue_Button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_main_play_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/m_Next_Button" />
+
+    <ImageView
+        android:id="@+id/m_Play_Type_Button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_play_type_random"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/m_Last_Button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!--歌单详情界面的顶部布局-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/m_constrain_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <ImageView
+        android:id="@+id/m_headimg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/shareplaylistdetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_tips"
+        app:layout_constraintBottom_toBottomOf="@+id/m_headimg"
+        app:layout_constraintEnd_toEndOf="@+id/m_headimg" />
+
+    <TextView
+        android:id="@+id/playcount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_textdrawable_erji"
+        android:gravity="end"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/m_headimg"
+        app:layout_constraintTop_toTopOf="@+id/m_headimg" />
+
+    <TextView
+        android:id="@+id/m_playlist_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:maxLines="2"
+        android:textColor="@color/weak_white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/m_headimg"
+        app:layout_constraintTop_toTopOf="@+id/m_headimg" />
+
+    <LinearLayout
+        android:id="@+id/m_creater_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/m_headimg"
+        app:layout_constraintTop_toBottomOf="@+id/m_playlist_name_tv">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/m_creater_head_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:civ_border_color="#00ff0000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/m_creater_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:drawableEnd="@drawable/ic_text_to_start"
+            android:maxLines="1"
+            android:text="userName"
+            android:textColor="@color/weak_white" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/common_playlist_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_headimg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
