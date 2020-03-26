@@ -68,31 +68,31 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation(name: 'extension-flac', ext: 'aar')
-    implementation 'androidx.appcompat:appcompat:1.1.0-beta01'
-    implementation 'com.google.android.material:material:1.1.0-alpha07'
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha03'
+    implementation 'com.google.android.material:material:1.2.0-alpha05'
     implementation 'androidx.legacy:legacy-support-v13:1.0.0'
     implementation 'androidx.annotation:annotation:1.1.0'
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.annotation:annotation:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
-    implementation 'androidx.dynamicanimation:dynamicanimation:1.1.0-alpha01'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+    implementation 'androidx.dynamicanimation:dynamicanimation:1.1.0-alpha03'
     implementation 'androidx.multidex:multidex:2.0.1'
 
     implementation 'androidx.legacy:legacy-support-v13:1.0.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.14.0'
-    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
+    implementation 'com.squareup.okhttp3:okhttp:4.2.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.13'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
-    implementation 'com.alibaba:fastjson:1.1.71.android'
-    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.alibaba:fastjson:1.2.62'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
 
     //Glide V4
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
-    implementation 'com.github.bumptech.glide:okhttp3-integration:4.9.0'
-    implementation 'com.github.bumptech.glide:annotations:4.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.10.0'
+    implementation 'com.github.bumptech.glide:annotations:4.10.0'
 
     //弹出Diaolog
     implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
@@ -105,8 +105,6 @@ dependencies {
     implementation 'jp.wasabeef:glide-transformations:3.0.1'
 
     //Glide图片加载
-    implementation 'com.github.bumptech.glide:compiler:4.9.0'
-    implementation "com.github.bumptech.glide:okhttp3-integration:4.9.0"
     annotationProcessor 'androidx.annotation:annotation:1.1.0'
 
     //高斯模糊
@@ -121,14 +119,14 @@ dependencies {
     implementation 'org.greenrobot:greendao:3.2.2'
 
     //圆形图
-    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
 
     //水平进度条
     implementation 'me.zhouzhuo.zzhorizontalprogressbar:zz-horizontal-progressbar:1.0.0'
 
     //butterknife
-    implementation 'com.jakewharton:butterknife:10.1.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
 
     //异步权限请求
     implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
